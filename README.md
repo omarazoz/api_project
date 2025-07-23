@@ -66,7 +66,7 @@ Node.js & NPM (optional, for frontend assets)
 Setup Instructions
 Clone the repository
 bash
-git clone https://github.com/yourusername/blog-platform-api.git
+git clone https://github.com/omarazoz/api_project 
 cd blog-platform-api
 Install dependencies
 bash
@@ -79,11 +79,11 @@ env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=blog_platform
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+DB_DATABASE=api_project
+DB_USERNAME=
+DB_PASSWORD=
 
-JWT_SECRET=your_jwt_secret_key
+JWT_SECRET=
 Generate application key
 bash
 php artisan key:generate
@@ -94,7 +94,7 @@ Create database Create a new database named blog_platform in your MySQL/PostgreS
 Run migrations
 bash
 php artisan migrate
-Seed the database (optional)
+Seed the database 
 bash
 php artisan db:seed
 Start the development server
@@ -150,8 +150,8 @@ POST /api/register
 Content-Type: application/json
 
 {
-    "name": "John Doe",
-    "email": "john@example.com",
+    "name": "Omar abd El_aziz ",
+    "email": "oamacs19@gmail.com",
     "password": "password123",
     "password_confirmation": "password123",
     "role": "author"
@@ -162,7 +162,7 @@ POST /api/login
 Content-Type: application/json
 
 {
-    "email": "john@example.com",
+    "email": "oamacs19@gmail.com",
     "password": "password123"
 }
 Create Blog Post
